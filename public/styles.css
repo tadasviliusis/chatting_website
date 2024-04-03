@@ -1,0 +1,128 @@
+/* styles.css */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    float: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-control {
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border: none;
+    box-shadow: 4px 4px 6px #c7c9cd,
+        -4px -4px 6px #ffffff;
+    transition: background-position 1s;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.text-center a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.text-center a:hover,
+.text-center a:focus {
+    color: #D1D2D4;
+    text-decoration: none;
+}
+
+#registerForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#registerForm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+#loginForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#loginForm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .container {
+        padding-top: 20vh;
+    }
+
+    .form-control,
+    .btn-primary {
+        font-size: 14px;
+    }
+
+    #loginForm {
+        padding: 20px;
+    }
+}
+
+
+
+#chatArea {
+    height: 250px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}

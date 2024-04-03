@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatting Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5">Real-Time Chat</h2>
+        <!-- Links to Login and Register pages -->
+        <div class="text-center mb-3">
+            
+            <span id="loggedInUser">Welcome, <strong id="usernameDisplay"></strong></span>
+            <span id="loginRegisterLinks">
+                <a href="login.html">Login</a> | <a href="register.html">Register</a>
+            </span>
+        </div>
+        <div id="chatArea" class="border rounded p-3 mb-4"></div>
+        <input type="text" id="userInput" class="form-control mb-2" placeholder="Your name...">
+        <textarea id="messageInput" class="form-control mb-2" placeholder="Write a message..."></textarea>
+        <button id="sendButton" class="btn btn-primary">Send</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
